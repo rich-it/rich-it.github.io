@@ -52,7 +52,7 @@ const AboutRoute = () => {
 
             <Grid item style={{marginBottom: 8, overflow: 'auto'}}>
                 <TypographyMultilinedWithIcon desc={myDetails}>
-                    About me
+                    About us
                 </TypographyMultilinedWithIcon>
             </Grid>
 

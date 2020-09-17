@@ -47,15 +47,15 @@ export const navItems = [
 export const navContactIcons = [
     {
         svgPath: githubIcon,
-        link: 'https://github.com/p32929'
+        link: 'https://github.com/rich-it/'
     },
     {
         svgPath: facebookIcon,
-        link: 'https://facebook.com/p32929'
+        link: 'https://www.facebook.com/rich.it.ctg/'
     },
     {
-        svgPath: wordpressIcon,
-        link: 'https://p32929.wordpress.com/'
+        svgPath: whatsappIcon,
+        link: 'https://api.whatsapp.com/send?phone=8801796306262'
     }
 ]
 
