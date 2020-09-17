@@ -47,7 +47,7 @@ const AboutRoute = () => {
 
             <Grid item>
                 <Avatar variant='square' style={styles.avatar}
-                        src={avatarImage}></Avatar>
+                        src="https://www.flaticon.com/svg/static/icons/svg/3127/3127091.svg"></Avatar>
             </Grid>
 
             <Grid item style={{marginBottom: 8, overflow: 'auto'}}>
