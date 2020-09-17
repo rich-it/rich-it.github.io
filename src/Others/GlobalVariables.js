@@ -858,6 +858,11 @@ export const contactInfos = [
                 link: 'https://www.facebook.com/rich.it.ctg'
             },
             {
+                title: 'Facebook Group',
+                logo: 'https://www.flaticon.com/svg/static/icons/svg/1808/1808401.svg',
+                link: 'https://www.facebook.com/groups/richit/'
+            },
+            {
                 title: 'GitHub',
                 logo: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
                 link: 'https://github.com/rich-it/'
