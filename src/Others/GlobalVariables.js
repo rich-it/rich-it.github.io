@@ -838,6 +838,11 @@ export const contactInfos = [
         text: "Contact us",
         arr: [
             {
+                title: 'Email',
+                logo: 'https://www.flaticon.com/svg/static/icons/svg/893/893247.svg',
+                link: 'rich.it@yahoo.com'
+            },
+            {
                 title: 'Skype',
                 logo: 'https://image.flaticon.com/icons/svg/174/174869.svg',
                 link: 'p32929'
@@ -848,11 +853,6 @@ export const contactInfos = [
                 link: 'https://api.whatsapp.com/send?phone=8801796306262'
             },
             {
-                title: 'Google Play',
-                logo: 'https://www.vectorlogo.zone/logos/google_play/google_play-icon.svg',
-                link: 'https://play.google.com/store/apps/developer?id=Rich+IT&hl=en'
-            },
-            {
                 title: 'Facebook',
                 logo: 'https://image.flaticon.com/icons/svg/124/124010.svg',
                 link: 'https://www.facebook.com/rich.it.ctg'
@@ -861,6 +861,11 @@ export const contactInfos = [
                 title: 'GitHub',
                 logo: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
                 link: 'https://github.com/rich-it/'
+            },
+            {
+                title: 'Google Play',
+                logo: 'https://www.vectorlogo.zone/logos/google_play/google_play-icon.svg',
+                link: 'https://play.google.com/store/apps/developer?id=Rich+IT&hl=en'
             },
         ]
     },
