@@ -26,17 +26,8 @@ import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import {useOvermind} from "../../../../Others/OvermindHelper";
 import Avatar from "@material-ui/core/Avatar";
-import avatarImage from '../../../../Images/avatar2.png'
 import TypographyMultilinedWithIcon from "../../../Helpers/TypographyMultilinedWithIcon";
 import {myDetails} from "../../../../Others/MainItems";
-
-const styles = {
-    avatar: {
-        height: 136,
-        width: 136,
-        margin: 16
-    },
-}
 
 const AboutRoute = () => {
     const {state, actions} = useOvermind()
@@ -46,14 +37,12 @@ const AboutRoute = () => {
               justify={state.belowSm ? 'center' : 'flex-end'} alignContent='center'>
 
             <Grid item>
-                <Avatar variant='square' style={styles.avatar}
-                        src="https://www.flaticon.com/svg/static/icons/svg/3127/3127091.svg"></Avatar>
                 <Avatar variant='square' style={{
                     height: state.bigDevice ? 400 : 136,
                     width: state.bigDevice ? 400 : 136,
                     margin: 16
                 }}
-                        src={avatarImage}></Avatar>
+                        src="https://www.flaticon.com/svg/static/icons/svg/3127/3127091.svg"></Avatar>
             </Grid>
 
             <Grid item style={{marginBottom: 8, overflow: 'auto'}}>
