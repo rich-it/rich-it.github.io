@@ -27,7 +27,7 @@ import Grid from "@material-ui/core/Grid";
 import {useOvermind} from "../../Utils/OvermindHelper";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
-import {myImageLink, myName, myOccupation} from '../../Utils/MainItems'
+import {myImageLink, myName, myOccupation, richitLogo} from '../../Utils/MainItems'
 import avatarImage from '../../Assets/avatar.png'
 
 const styles = {
@@ -54,7 +54,7 @@ const AvatarText = () => {
     return (
         <Grid item xs sm md lg xl container direction="column" justify="center"
               alignItems="center">
-            <Avatar style={styles.avatar} src={myImageLink ? myImageLink : avatarImage}></Avatar>
+            <Avatar style={styles.avatar} src={richitLogo}></Avatar>
 
             <Typography style={styles.title}>{myName.toUpperCase()}</Typography>
             <Typography style={styles.subtitle}>{myOccupation}</Typography>
