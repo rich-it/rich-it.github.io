@@ -287,52 +287,6 @@ export const skills = [
         ]
     },
     {
-        text: "Human Languages",
-        arr: [
-            {
-                title: 'Bengali',
-                desc: "Native",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097000.svg',
-            },
-            {
-                title: 'Chittagonian',
-                desc: "Native",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097008.svg',
-            },
-            {
-                title: 'English',
-                desc: "Fluent",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097023.svg',
-            },
-            {
-                title: 'Arabic',
-                desc: "Mediocre",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3096/3096991.svg',
-            },
-
-            {
-                title: 'Hindi',
-                desc: "Conversational",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097042.svg',
-            },
-            {
-                title: 'Urdu',
-                desc: "Conversational",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097115.svg',
-            },
-            {
-                title: 'Korean',
-                desc: "Beginner",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097055.svg',
-            },
-            {
-                title: 'Mandarin',
-                desc: "Beginner",
-                logo: 'https://www.flaticon.com/premium-icon/icons/svg/3097/3097067.svg',
-            },
-        ]
-    },
-    {
         text: "Others",
         arr: [
             {
@@ -556,9 +510,9 @@ export const projects = [
                 link: 'https://p32929.github.io/SendMoney2Me/'
             },
             {
-                title: 'My App (V2)',
+                title: 'My Portfolio (V2)',
                 logo: 'https://image.flaticon.com/icons/svg/2762/2762575.svg',
-                desc: 'V2 of my App - Created using ReactJS',
+                desc: 'V2 of my Portfolio - Created using ReactJS',
                 link: 'https://p32929.github.io'
             },
             {
@@ -574,7 +528,7 @@ export const projects = [
                 link: 'https://p32929.github.io/Badges/'
             },
             {
-                title: 'My App (V1)',
+                title: 'My Portfolio (V1)',
                 logo: 'https://image.flaticon.com/icons/svg/2762/2762575.svg',
                 desc: 'Created using ReactJS',
                 link: 'https://p32929.github.io/Portfolio'
@@ -881,13 +835,17 @@ export const projects = [
 
 export const contactInfos = [
     {
-        text: "Contact me",
+        text: "Contact us",
         arr: [
+            {
+                title: 'Email',
+                logo: 'https://www.flaticon.com/svg/static/icons/svg/893/893247.svg',
+                link: 'rich.it@yahoo.com'
+            },
             {
                 title: 'Skype',
                 logo: 'https://image.flaticon.com/icons/svg/174/174869.svg',
-                desc: 'p32929',
-                link: 'skype:p32929?chat'
+                link: 'p32929'
             },
             {
                 title: 'WhatsApp',
@@ -897,32 +855,17 @@ export const contactInfos = [
             {
                 title: 'Facebook',
                 logo: 'https://image.flaticon.com/icons/svg/124/124010.svg',
-                link: 'https://www.facebook.com/p32929'
+                link: 'https://www.facebook.com/rich.it.ctg'
             },
             {
-                title: 'Anywhere on the internet',
-                logo: 'https://www.flaticon.com/svg/static/icons/svg/1034/1034456.svg',
-                link: '@p32929'
-            }
-        ]
-    },
-    {
-        text: "Website Profiles",
-        arr: [
+                title: 'Facebook Group',
+                logo: 'https://www.flaticon.com/svg/static/icons/svg/1808/1808401.svg',
+                link: 'https://www.facebook.com/groups/richit/'
+            },
             {
                 title: 'GitHub',
                 logo: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
-                link: 'https://www.facebook.com/p32929'
-            },
-            {
-                title: 'Wordpress',
-                logo: 'https://lh3.googleusercontent.com/FKoZImII3S1CKxDwudC2k1EW8NMDi8FyWRk0_AufAQcixOd-kdll5H32L2lKvGIbVWIB',
-                link: 'https://p32929.wordpress.com/'
-            },
-            {
-                title: 'YouTube',
-                logo: 'https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc',
-                link: 'https://www.youtube.com/channel/UCFucp3uZ96IBYxG8755AniQ'
+                link: 'https://github.com/rich-it/'
             },
             {
                 title: 'Google Play',
@@ -932,45 +875,10 @@ export const contactInfos = [
         ]
     },
     {
-        text: "Apps I rarely use",
+        text: "Thank you for visiting our portfolio",
         arr: [
             {
-                title: 'LinkedIn',
-                logo: 'https://image.flaticon.com/icons/svg/174/174857.svg',
-                link: 'https://www.linkedin.com/in/p32929/'
-            },
-            {
-                title: 'Reddit',
-                logo: 'https://image.flaticon.com/icons/svg/174/174866.svg',
-                link: 'https://www.reddit.com/user/p32929'
-            },
-            {
-                title: 'Twitter',
-                logo: 'https://image.flaticon.com/icons/svg/733/733579.svg',
-                link: 'https://twitter.com/p32929'
-            },
-            {
-                title: 'Instagram',
-                logo: 'https://image.flaticon.com/icons/svg/2111/2111463.svg',
-                link: 'https://www.instagram.com/p32929/'
-            },
-            {
-                title: 'Fiverr',
-                logo: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/fiverr-2018.png?auto=format&q=60&fit=max&w=200',
-                link: 'https://www.fiverr.com/users/fayazbinsalam/'
-            },
-            {
-                title: "Freelancer",
-                logo: "https://lh3.googleusercontent.com/EXMdy4ai6HHl_Ze8vxC7pdQzfS0HFiZ70F2IdPq_VuYropTkrUFyPPlftbPKEbhISg",
-                link: "https://www.freelancer.com/u/p32929"
-            }
-        ]
-    },
-    {
-        text: "Thank you for visiting my portfolio",
-        arr: [
-            {
-                title: "Click on the link button",
+                title: "Click on the link",
                 desc: 'To create your own portfolio. It will only take 3 minutes',
                 logo: giftIcon,
                 link: 'https://github.com/p32929/p32929.github.io/'

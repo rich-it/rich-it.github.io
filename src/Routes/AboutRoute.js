@@ -27,7 +27,7 @@ import Grid from "@material-ui/core/Grid";
 import {useOvermind} from "../Utils/OvermindHelper";
 import AvatarText from "../SubComponents/Helpers/AvatarText";
 import TypographyMultilinedWithIcon from "../SubComponents/ListItems/TypographyMultilinedWithIcon";
-import {myDetails} from "../Utils/MainItems";
+import {myDetails, myImageLink} from "../Utils/MainItems";
 import avatarImage from "../Assets/avatar2.png";
 
 const aboveSmAvatarSize = {height: '100%'}
@@ -50,7 +50,7 @@ const AboutRoute = () => {
         <Grid id='aboutGrid' container direction='column' justify='flex-end' alignItems='center' alignContent='center'>
             <Grid style={{height: avatarGridHeight}} id='avatarImageGrid' item xs container justify='center'
                   alignItems='center' alignContent='center'>
-                <img style={state.belowSm ? belowSmAvatarSize : aboveSmAvatarSize} src={avatarImage}/>
+                <img style={state.belowSm ? belowSmAvatarSize : aboveSmAvatarSize} src={myImageLink}/>
             </Grid>
 
             <Grid id='aboutMeTextGrid' item style={{marginBottom: 8, overflow: 'auto'}}>
