@@ -24,14 +24,14 @@ SOFTWARE.
 
 import React, {useEffect} from 'react';
 import Grid from "@material-ui/core/Grid";
-import {useOvermind} from "../Others/OvermindHelper";
+import {useOvermind} from "./Utils/OvermindHelper";
 import {MemoryRouter, Redirect, Route} from "react-router-dom";
 import Paper from "@material-ui/core/Paper";
 import {useTheme} from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import {getContentHeightWidth, getParentHeightWidth} from '../Others/GlobalMethods'
-import LeftPart from "./BasicStructures/LeftPart";
-import RightPart from "./BasicStructures/RightPart";
+import {getContentHeightWidth, getParentHeightWidth} from './Utils/GlobalMethods'
+import LeftPart from "./Components/LeftPart";
+import RightPart from "./Components/RightPart";
 
 const styles = {
     parent: getParentHeightWidth(),
@@ -43,28 +43,26 @@ const styles = {
 const getRightPartComponent = (state) => {
     if (state.belowSm) {
         if (state.drawerState) {
-            console.log("NOT SHOWING RIGHT1")
+            // console.log("NOT SHOWING RIGHT1")
             return null;
         } else {
-            console.log("SHOWING RIGHT1")
+            // console.log("SHOWING RIGHT1")
             return <RightPart/>
         }
     } else {
-        console.log("SHOWING RIGHT2")
+        // console.log("SHOWING RIGHT2")
         return <RightPart/>
     }
 }
 
-const Portfolio = () => {
+const App = () => {
     const {state, actions} = useOvermind()
     const theme = useTheme()
     const belowSm = useMediaQuery(theme.breakpoints.down('sm'))
-    const bigDevice = useMediaQuery(theme.breakpoints.up(1500))
 
     useEffect(() => {
         actions.setBelowSm(belowSm)
-        actions.setBigDevice(bigDevice)
-    }, [bigDevice, belowSm])
+    }, [belowSm])
 
     return (
         <Grid container style={{backgroundColor: state.primaryColor, ...styles.parent}}>
@@ -90,4 +88,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default App;

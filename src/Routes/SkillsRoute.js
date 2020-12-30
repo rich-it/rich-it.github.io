@@ -24,22 +24,22 @@ SOFTWARE.
 
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import {useOvermind} from "../../../../Others/OvermindHelper";
-import {getTextAndListGrid} from "../../../../Others/GlobalMethods";
-import {projects} from "../../../../Others/GlobalVariables";
+import {useOvermind} from "../Utils/OvermindHelper";
+import {getTextAndListGrid} from "../Utils/GlobalMethods";
+import {skills} from "../Utils/GlobalVariables";
 
-const ProjectsRoute = () => {
+const SkillsRoute = () => {
     const {state, actions} = useOvermind()
 
     return (
         <Grid spacing={1} container xs item direction='row'>
             {
-                projects.map((item) => {
-                    return getTextAndListGrid(item, 96);
+                skills.map((item) => {
+                    return getTextAndListGrid(item);
                 })
             }
         </Grid>
     );
 };
 
-export default ProjectsRoute;
+export default SkillsRoute;

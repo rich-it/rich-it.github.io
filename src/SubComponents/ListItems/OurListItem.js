@@ -24,11 +24,11 @@ SOFTWARE.
 
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import {useOvermind} from "../../Others/OvermindHelper";
+import {useOvermind} from "../../Utils/OvermindHelper";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
-import {giftIcon, linkIcon} from '../../Others/MainItems'
+import {giftIcon, linkIcon} from '../../Utils/MainItems'
 import IconButton from "@material-ui/core/IconButton";
 import SvgHelper from "../Helpers/SvgHelper";
 
@@ -60,7 +60,7 @@ const styles = {
 
 function getLinkIcon(url) {
     if (url) {
-        if (url.toString().includes('http')) {
+        if (url.toString().includes('http') || url.toString().includes('skype:') ) {
             return <IconButton style={{display: 'flex', flexDirection: 'column', alignSelf: 'center'}} target="_blank"
                                href={url}
                                size='small'>

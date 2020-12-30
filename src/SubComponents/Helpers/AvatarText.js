@@ -24,32 +24,42 @@ SOFTWARE.
 
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import {useOvermind} from "../../Others/OvermindHelper";
-import {getContentHeightWidth} from '../../Others/GlobalMethods'
-import Paper from "@material-ui/core/Paper";
-import AvatarText from "./Left/AvatarText";
-import LeftMenus from "./Left/LeftMenus";
-import SmallBottomLinks from "./Left/SmallBottomLinks";
+import {useOvermind} from "../../Utils/OvermindHelper";
+import Avatar from "@material-ui/core/Avatar";
+import Typography from "@material-ui/core/Typography";
+import {myImageLink, myName, myOccupation} from '../../Utils/MainItems'
+import avatarImage from '../../Assets/avatar.png'
 
-const LeftPart = () => {
+const styles = {
+    avatar: {
+        height: 125,
+        width: 125,
+    },
+    title: {
+        fontSize: 14,
+        color: "#212121",
+        marginTop: 24,
+        fontWeight: 'bold'
+    },
+    subtitle: {
+        fontSize: 12,
+        color: "#212121",
+        fontWeight: 'bold'
+    },
+}
+
+const AvatarText = () => {
     const {state, actions} = useOvermind()
 
     return (
-        <Grid style={{...getContentHeightWidth(state.belowSm), width: '100%'}} container item xs={11} sm={11}
-              md={3} lg={3}
-              xl={2}>
-            <Paper elevation={12} style={{...getContentHeightWidth(state.belowSm), width: '100%'}}>
-                <Grid style={{...getContentHeightWidth(state.belowSm), width: '100%'}} container direction="column"
-                      justify="space-around" alignContent='center' alignItems="center">
+        <Grid item xs sm md lg xl container direction="column" justify="center"
+              alignItems="center">
+            <Avatar style={styles.avatar} src={myImageLink ? myImageLink : avatarImage}></Avatar>
 
-                    <AvatarText/>
-                    <LeftMenus/>
-                    <SmallBottomLinks/>
-
-                </Grid>
-            </Paper>
+            <Typography style={styles.title}>{myName.toUpperCase()}</Typography>
+            <Typography style={styles.subtitle}>{myOccupation}</Typography>
         </Grid>
     );
 };
 
-export default LeftPart;
+export default AvatarText;
