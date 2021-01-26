@@ -33,7 +33,7 @@ export const giftIcon = 'https://image.flaticon.com/icons/svg/1867/1867817.svg'
 // First page infos
 export var myName = 'Rich IT'
 export var myOccupation = 'Community based IT firm'
-export var myDetails = 'Hello Amazing People, we are Rich Information Technology - A community based software firm in Chittagong, Bangladesh. Our goal is to be the Richest Software Firm in the world, to be the best Software Firm in the world, to provide a lot of amazing Softwares/Apps/Devices to the masses, etc. If you wanna be a part of our community, whether to build your career or to support our works, visit the CONTACT section of this website. Thank you'
+export var myDetails = 'At Rich InfoTech, we build the future by training our young generations. Also we provide all types of development solutions.'
 export var myImageLink = "https://www.flaticon.com/svg/static/icons/svg/3127/3127091.svg"
 export var richitLogo = "https://user-images.githubusercontent.com/6418354/103352985-dbbaba00-4ad1-11eb-83a2-a73d296f220a.png"
 export var primaryColor = '#00C853';
